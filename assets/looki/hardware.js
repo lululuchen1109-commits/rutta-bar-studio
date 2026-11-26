@@ -93,7 +93,7 @@
   let shown = 0;
   async function fitTo(n) {
     const request = ++sequence;
-    const url = 'assets/landing/fit-' + String(n).padStart(2, '0') + '.webp?v=pair-center-1';
+    const url = 'assets/landing/fit-' + String(n).padStart(2, '0') + '.webp?v=studio-v6';
     try {
       await preload(url);
       if (request !== sequence) return false;
