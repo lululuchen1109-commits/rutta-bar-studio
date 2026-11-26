@@ -70,7 +70,7 @@
   let change = 0;
   finishes.forEach(button => {
     const color = button.dataset.tone;
-    const url = 'assets/landing/hero-' + color + '.webp?v=studio-v4';
+    const url = 'assets/landing/hero-' + color + '.webp?v=studio-v5';
     button.addEventListener('pointerenter', () => preload(url).catch(() => {}), {once:true});
     button.addEventListener('click', async () => {
       const request = ++change;
