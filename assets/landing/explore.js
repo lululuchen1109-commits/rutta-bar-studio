@@ -11,13 +11,13 @@
   const views = {
     home: {
       angle: -0.50, pitch: 0.51, magnification: 1.27, target: [-2.2, 16, 0],
-      text: "Rutta Bar in silver", photo: "hero-silver.webp?v=studio-v3",
+      text: "Rutta Bar in silver", photo: "hero-silver.webp?v=studio-v4",
       alt: "Rutta Bar in silver, seen from above"
     },
     ports: {
       angle: -0.78, pitch: 0.24, magnification: 1.65, target: [-4.2, 7.8, 0],
       text: "One pinhole faces the palm rest; a second sits mid-side 15.5 mm away—forming a 15.7 mm dual-mic baseline.",
-      photo: "explore-ports.webp?v=studio-v3", alt: "One acoustic pinhole centered on the short end and a second mid-side pinhole spaced 15.5 mm apart"
+      photo: "explore-ports.webp?v=studio-v4", alt: "One acoustic pinhole centered on the short end and a second mid-side pinhole spaced 15.5 mm apart"
     },
     plug: {
       angle: 2.84, pitch: 0.36, magnification: 1.94, target: [6.50, 26, 0],
@@ -25,9 +25,9 @@
       photo: "explore-plug.webp?v=studio-v2", alt: "The reversible USB-C plug on the rear of the aluminum body"
     },
     mute: {
-      angle: -0.16, pitch: 0.19, magnification: 2.37, target: [-5.5, 26.7, 0],
+      angle: -0.16, pitch: 0.19, magnification: 2.37, target: [-5.5, 26.0, 0],
       text: "Slide the switch to mute. An orange mark appears in the track so you can see its position.",
-      photo: "explore-mute.webp?v=studio-v3", alt: "The mute switch at its left stop with an orange marker in the track"
+      photo: "explore-mute.webp?v=studio-v4", alt: "The mute switch at its left stop with an orange marker in the track"
     }
   };
   let selected = "home";
@@ -78,7 +78,7 @@
     if (loading) return loading;
     const scriptReady = window.RuttaViewer ? Promise.resolve() : new Promise((resolve, reject) => {
       const script = document.createElement("script");
-      script.src = "assets/landing/explore-viewer.js?v=studio-v3";
+      script.src = "assets/landing/explore-viewer.js?v=studio-v4";
       script.onload = resolve;
       script.onerror = reject;
       document.head.append(script);
