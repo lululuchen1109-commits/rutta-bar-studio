@@ -79,7 +79,7 @@
         if (request !== change) return;
         photo.src = url;
         const name = button.getAttribute('aria-label');
-        photo.alt = name + ' Rutta Bar, viewed from its outer face.';
+        photo.alt = name + ' Rutta Bar - R1, viewed from its outer face.';
         label.textContent = name;
         hardware.querySelector('#finish').dataset.finish = color;
         finishes.forEach(item => item.setAttribute('aria-pressed',String(item === button)));
@@ -103,7 +103,7 @@
       slider.value = String(n);
       slider.setAttribute('aria-valuetext', state);
       output.value = state;
-      frame.alt = state === 'Connected' ? 'Rutta Bar seated against the side of the MacBook Air.' : 'The Rutta Bar USB-C plug aligns with the MacBook Air.';
+      frame.alt = state === 'Connected' ? 'Rutta Bar - R1 seated against the side of the Mac.' : 'The Rutta Bar - R1 USB-C plug aligns with the Mac.';
       return true;
     } catch {
       if (request === sequence) {slider.value = String(shown); output.value = 'Try again';}
